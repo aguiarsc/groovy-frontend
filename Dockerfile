@@ -4,8 +4,6 @@ WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./
-RUN echo "VITE_API_BASE_URL=${VITE_API_BASE_URL}" > .env
-RUN echo "VITE_API_BASE_URL=${VITE_API_BASE_URL}"
 RUN npm ci
 
 # Copy project files and build
