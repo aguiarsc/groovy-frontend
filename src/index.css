@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: dark;
+    color: theme('colors.macchiato.text');
+    background-color: theme('colors.macchiato.base');
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  #root {
+    width: 100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: theme('colors.macchiato.text');
+    font-weight: 600;
+  }
+  
+  a {
+    font-weight: 500;
+    color: theme('colors.macchiato.blue');
+    text-decoration: inherit;
+  }
+ 
+  a:hover {
+    color: theme('colors.macchiato.lavender');
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-macchiato-surface0/70 backdrop-blur-glass rounded-2xl border border-macchiato-overlay0/30 shadow-neumorphic-light;
+  }
+ 
+  .neumorphic-button {
+    @apply bg-macchiato-surface1 shadow-neumorphic-dark hover:shadow-neumorphic-hover active:shadow-neumorphic-pressed transition-all duration-300 ease-out rounded-xl px-6 py-3 text-macchiato-text font-medium border border-macchiato-overlay0/10;
+  }
+}
