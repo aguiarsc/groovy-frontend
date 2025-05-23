@@ -1,6 +1,9 @@
 # Groovy Music Streaming Frontend
 
 <div align="center">
+
+  ![Image](https://github.com/user-attachments/assets/27adf966-5e2f-4645-9f9a-ae003d7a0539)
+  
   <h3>🎵 Modern React-based UI for the Groovy Music Streaming Platform 🎵</h3>
 </div>
 
